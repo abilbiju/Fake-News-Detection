@@ -14,7 +14,6 @@ A Flask-based web application for detecting fake news articles. This app utilize
 - [Screenshots](#screenshots)
 - [License](#license)
 
----
 
 ## Features
 
@@ -58,74 +57,7 @@ fake-news-detection/
    ```bash
    git clone https://github.com/abilbiju/Fake-News-Detection.git
    cd Fake-News-Detection
-   Here's a comprehensive `README.md` based on your provided code and its functionality:
-
-```markdown
-# Fake News Detection Web Application
-
-A Flask-based web application for detecting fake news articles. This app utilizes multiple machine learning classifiers trained on labeled datasets to predict whether a given news article is fake or not. The application displays predictions from four classifiers: Naive Bayes, Decision Tree, Logistic Regression, and Random Forest.
-
-## Table of Contents
-
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Datasets](#datasets)
-- [Machine Learning Models](#machine-learning-models)
-- [Screenshots](#screenshots)
-- [License](#license)
-
----
-
-## Features
-
-- Accepts a news article as input via a web interface.
-- Analyzes the input text using a TF-IDF vectorizer.
-- Predicts the classification (Fake News or Not Fake News) using the following models:
-  - Naive Bayes
-  - Decision Tree
-  - Logistic Regression
-  - Random Forest
-- Displays predictions from all classifiers in a user-friendly manner.
-
----
-
-## Technology Stack
-
-- **Backend**: Flask
-- **Frontend**: HTML and Jinja2 templates
-- **Machine Learning**: Scikit-learn
-- **Data Handling**: Pandas, NumPy
-- **Language**: Python
-
----
-
-## Project Structure
-
-```
-fake-news-detection/
-├── app.py                # Main Flask application
-├── templates/
-│   ├── index.html        # Homepage template for user input
-│   ├── result.html       # Results template for displaying predictions
-├── static/               # Static files (CSS, JS, images)
-├── Fake.csv              # Dataset containing fake news articles
-├── True.csv              # Dataset containing true news articles
-├── requirements.txt      # List of dependencies
-└── README.md             # Project documentation
-```
-
----
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/fake-news-detection.git
-   cd fake-news-detection
-   ```
+ 
 
 2. Install the dependencies:
    ```bash
