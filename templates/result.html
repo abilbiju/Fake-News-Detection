@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Results</h1>
+        <p><strong>Entered Article:</strong></p>
+        <div class="article-box">
+            <p>{{ article }}</p>
+        </div>
+        <div class="result-box">
+            <h2>Model Predictions:</h2>
+            <ul>
+                <li><strong>Naive Bayes:</strong> {{ predictions['Naive Bayes'] }}</li>
+                <li><strong>Decision Tree:</strong> {{ predictions['Decision Tree'] }}</li>
+                <li><strong>Logistic Regression:</strong> {{ predictions['Logistic Regression'] }}</li>
+                <li><strong>Random Forest:</strong> {{ predictions['Random Forest'] }}</li>
+            </ul>
+        </div>
+        <a href="/">Test Another Article</a>
+    </div>
+</body>
+</html>

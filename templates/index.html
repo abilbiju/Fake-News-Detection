@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detection</h1>
+        <form action="/predict" method="POST">
+            <label for="news_article">Enter News Article:</label><br>
+            <textarea id="news_article" name="news_article" rows="10" cols="80" placeholder="Paste your news article here"></textarea><br><br>
+            <input type="submit" value="Check if Fake">
+        </form>
+
+        <h2>TF-IDF and Word Clouds</h2>
+        <div class="diagrams">
+            <div class="diagram">
+                <h3>Diagram 1</h3>
+                <img src="{{ url_for('static', filename='images/diagram1.png') }}" alt="Diagram 1" class="diagram-image">
+            </div>
+            <div class="diagram">
+                <h3>Diagram 2</h3>
+                <img src="{{ url_for('static', filename='images/diagram2.png') }}" alt="Diagram 2" class="diagram-image">
+            </div>
+            <div class="diagram">
+                <h3>Diagram 3</h3>
+                <img src="{{ url_for('static', filename='images/diagram3.png') }}" alt="Diagram 3" class="diagram-image">
+            </div>
+            <div class="diagram">
+                <h3>Diagram 4</h3>
+                <img src="{{ url_for('static', filename='images/diagram4.png') }}" alt="Diagram 4" class="diagram-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
