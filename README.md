@@ -39,6 +39,7 @@ A Flask-based web application for detecting fake news articles. This app utilize
 ---
 
 ## Project Structure
+```
 fake-news-detection/
 ├── app.py                 # Main Flask application
 ├── templates/
@@ -47,7 +48,7 @@ fake-news-detection/
 ├── Fake.csv               # Fake news dataset
 ├── True.csv               # True news dataset
 └── requirements.txt       # Python dependencies
-
+```
 
 ---
 
