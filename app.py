@@ -12,8 +12,8 @@ from sklearn.ensemble import RandomForestClassifier
 app = Flask(__name__)
 
 # Load data
-df_fake = pd.read_csv("https://www.kaggle.com/code/therealsampat/fake-news-detection?select=Fake.csv")
-df_true = pd.read_csv("https://www.kaggle.com/code/therealsampat/fake-news-detection?select=True.csv")
+df_fake = pd.read_csv("https://drive.google.com/file/d/1BjBReook7rPTtBM6frTwdjfTCtvwcBQs/view?usp=drive_link")
+df_true = pd.read_csv("https://drive.google.com/file/d/1GNRojodstShEYURiIk923YRzPc484XkJ/view?usp=drive_link")
 
 # Add class labels
 df_fake["class"] = 0
